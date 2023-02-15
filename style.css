@@ -1,0 +1,295 @@
+/* PCスマホ共通スタイルスタイル */
+/* 文章 */
+body{
+ font-family: Noto Sans Japanese;
+ background-color: white;
+ color: black;
+}
+
+p {
+  font-size: 18px;
+
+}
+/* ＝＝＝＝＝＝＝＝＝＝
+　PC用のスタイル 
+/* ＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (min-width: 768px) {
+
+/* 横幅設定 */
+body {
+  max-width: 1080px;
+  min-width: 960px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navi  {
+  display: flex;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.home {
+  font-size: 34px;
+  border: solid;
+  margin-left: 200px;
+  padding: 5px; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navi > div > a:link {
+  color: black;
+}
+
+.navi > div > a:visited {
+  color: black;
+}
+
+.navi > div > a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  font-size: 34px;
+  font-weight: bold;
+  margin-left: 200px;
+}
+
+.menu > a {
+  text-decoration: none;
+  margin: 20px;
+}
+
+.menu > a:link {
+  color: black;
+}
+
+.menu > a:visited {
+  color: black;
+}
+
+.menu > a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+/* カメラの写真 */
+#cameraphoto {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.cameraphoto {
+  height: 400px;
+  width: 100%;
+}
+
+/*  自己紹介 */
+h1 {
+  text-align: center;
+  font-size: 34px;
+} 
+
+.about {
+  justify-content: center;
+  display: flex;
+  max-width: 960px;
+  margin: 20px;
+}
+
+/* 顔写真 */
+.aboutphoto {
+  width: 100%;
+  max-width: 960px;
+}
+
+.aboutphoto {
+  border-radius: 149px;
+  width: 141px;
+  height: 141px;
+  border: solid;  
+  margin-left: 80px;
+}
+
+.syoukai {
+  margin-left: 40px;
+  top: 0;
+}
+.name {
+  font-size: 34px;
+  margin: 0;
+}
+
+/*Works  */
+#works {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 179px;
+  height: 134;
+  margin: 20px;
+}
+
+#texts {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width: 179px;
+  margin: 0 20px 0 20px ;
+}
+
+/*コピーライト */
+.copyright {
+  text-align: center;  
+  margin-top: 40px;
+}
+
+
+}
+
+
+/* スマートフォン用スタイル */
+@media screen and (max-width:767px) {
+  
+  header {
+    display: flex;
+  }
+  
+  .navi  {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    margin: 5px;
+  }
+  
+  .home {
+    font-size: 18px;
+    border: solid;
+    margin-left: 2px;
+    padding: 5px; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navi > div > a:link {
+    color: black;
+  }
+  
+  .navi > div > a:visited {
+    color: black;
+  }
+  
+  .navi > div > a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .menu > a {
+    text-decoration: none;
+    margin: 20px;
+  }
+  
+  .menu > a:link {
+    color: black;
+  }
+  
+  .menu > a:visited {
+    color: black;
+  }
+  
+  .menu > a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+
+.cameraphoto {
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+} 
+
+.about {
+  justify-content: center;
+  display: flex;
+  max-width: 960px;
+  margin: 20px;
+}
+
+/* 顔写真 */
+.about{
+  width: 100%;
+  display: flex;
+
+  margin: 0;
+}
+
+.aboutphoto {
+  border-radius: 149px;
+  width: 110px;
+  height: 110px;
+  border: solid;  
+}
+
+.syoukai {
+  top: 0;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+}
+
+/*Works  */
+#works {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+
+.img {
+  width: 100%x;;
+  margin: 10px 20px 0 20px;
+}
+
+
+.text {
+  width: 100%;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*コピーライト */
+.copyright {
+  text-align: center;  
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+
+}
+
